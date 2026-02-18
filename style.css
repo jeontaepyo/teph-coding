@@ -1,1 +1,66 @@
-/* Add styles here */
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.lotto-numbers {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lotto-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    color: #333;
+}
+
+#generatorBtn {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+#generatorBtn:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Adding some color to the numbers */
+.lotto-number:nth-child(1) { background-color: #FFC107; }
+.lotto-number:nth-child(2) { background-color: #2196F3; }
+.lotto-number:nth-child(3) { background-color: #E91E63; }
+.lotto-number:nth-child(4) { background-color: #9C27B0; }
+.lotto-number:nth-child(5) { background-color: #00BCD4; }
+.lotto-number:nth-child(6) { background-color: #FF5722; }

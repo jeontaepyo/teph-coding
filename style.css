@@ -124,3 +124,50 @@ h1 {
 #theme-toggle:hover {
     background-color: color-mix(in srgb, var(--text) 10%, transparent);
 }
+
+.contact {
+    margin-top: 36px;
+    text-align: left;
+    color: var(--text);
+}
+
+.contact h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.contact form {
+    display: grid;
+    gap: 12px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid color-mix(in srgb, var(--text) 18%, transparent);
+    background-color: color-mix(in srgb, var(--card) 92%, #ffffff);
+    color: var(--text);
+    font-size: 14px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: 2px solid color-mix(in srgb, var(--button-bg) 65%, transparent);
+    border-color: transparent;
+}
+
+.contact button {
+    justify-self: start;
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    font-size: 14px;
+}
+
+.contact button:hover {
+    background-color: var(--button-bg-hover);
+}

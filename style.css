@@ -171,3 +171,14 @@ h1 {
 .contact button:hover {
     background-color: var(--button-bg-hover);
 }
+
+.comments {
+    margin-top: 36px;
+    text-align: left;
+    color: var(--text);
+}
+
+.comments h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}

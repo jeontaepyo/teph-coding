@@ -24,6 +24,19 @@
         <button type="submit">문의 보내기</button>
       </form>
     </section>
+    <section class="comments">
+      <h2>댓글</h2>
+      <div id="disqus_thread"></div>
+      <script>
+        (function () {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://prductbuilder.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </section>
   </div>
   <script src="main.js"></script>
 </body>

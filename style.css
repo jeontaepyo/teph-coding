@@ -89,6 +89,27 @@ h1 {
     margin: 6px 0 24px;
 }
 
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--text) 10%, transparent);
+}
+
+.nav a:hover {
+    background-color: color-mix(in srgb, var(--text) 8%, transparent);
+}
+
 .tester {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -172,6 +193,19 @@ h1 {
     font-size: 12px;
 }
 
+.consent {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.consent input {
+    margin-top: 2px;
+}
+
 .result-card h2 {
     margin-top: 0;
     font-size: 20px;
@@ -188,6 +222,45 @@ h1 {
     gap: 8px;
     color: var(--text);
     font-size: 14px;
+}
+
+.content {
+    margin-top: 32px;
+    text-align: left;
+}
+
+.content h2 {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.content p {
+    color: var(--text);
+}
+
+.bullets,
+.steps {
+    margin: 12px 0 0;
+    padding-left: 18px;
+    color: var(--muted);
+}
+
+.qa {
+    margin-bottom: 12px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background-color: color-mix(in srgb, var(--card) 94%, #ffffff);
+    border: 1px solid color-mix(in srgb, var(--text) 8%, transparent);
+}
+
+.qa h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+}
+
+.qa p {
+    margin: 0;
+    color: var(--muted);
 }
 
 .contact {

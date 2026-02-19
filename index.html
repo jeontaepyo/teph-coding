@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-adsense-account" content="ca-pub-6574337438506119">
-  <title>로또 번호 추첨기</title>
+  <meta name="description" content="AI로 강아지상/고양이상을 판별하는 동물상 테스트. 웹캠 또는 사진 업로드로 빠르게 확인해보세요.">
+  <title>동물상 테스트</title>
   <link rel="stylesheet" href="style.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6574337438506119"
      crossorigin="anonymous"></script>
@@ -20,10 +21,22 @@
     </div>
 
     <p class="subtitle">웹캠으로 내 얼굴이 강아지상인지 고양이상인지 확인해보세요.</p>
+    <nav class="nav">
+      <a href="#tester">테스트</a>
+      <a href="#about">서비스 소개</a>
+      <a href="#how">작동 방식</a>
+      <a href="#faq">자주 묻는 질문</a>
+      <a href="#privacy">개인정보 안내</a>
+      <a href="#contact">제휴 문의</a>
+    </nav>
 
-    <section class="tester">
+    <section id="tester" class="tester">
       <div class="camera-card">
         <div id="webcam-container" class="webcam"></div>
+        <label class="consent">
+          <input id="consent-checkbox" type="checkbox">
+          웹캠/이미지 분석은 브라우저에서만 처리되며 서버로 전송되지 않는다는 점을 확인했습니다.
+        </label>
         <div class="controls">
           <button id="start-btn" type="button">테스트 시작</button>
           <button id="stop-btn" type="button" disabled>중지</button>
@@ -43,7 +56,52 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section id="about" class="content">
+      <h2>서비스 소개</h2>
+      <p>이 사이트는 사용자의 얼굴 이미지를 기반으로 강아지상/고양이상 느낌을 재미로 분류하는 테스트입니다.</p>
+      <ul class="bullets">
+        <li>엔터테인먼트 목적이며 의학적 또는 과학적 판단을 대체하지 않습니다.</li>
+        <li>분석은 사용자의 브라우저에서 실행되며, 이미지가 서버에 저장되지 않습니다.</li>
+        <li>테스트 결과는 조명, 각도, 표정에 따라 달라질 수 있습니다.</li>
+      </ul>
+    </section>
+
+    <section id="how" class="content">
+      <h2>작동 방식</h2>
+      <ol class="steps">
+        <li>웹캠 또는 사진 업로드로 얼굴 이미지를 입력합니다.</li>
+        <li>Teachable Machine으로 학습된 모델이 브라우저에서 실시간으로 분류합니다.</li>
+        <li>강아지상/고양이상 확률과 가장 높은 결과를 표시합니다.</li>
+      </ol>
+    </section>
+
+    <section id="faq" class="content">
+      <h2>자주 묻는 질문</h2>
+      <div class="qa">
+        <h3>Q. 사진이 저장되나요?</h3>
+        <p>A. 저장하지 않습니다. 분석은 브라우저에서만 처리됩니다.</p>
+      </div>
+      <div class="qa">
+        <h3>Q. 결과가 달라지는 이유가 있나요?</h3>
+        <p>A. 조명, 카메라 각도, 표정, 해상도에 따라 결과가 달라질 수 있습니다.</p>
+      </div>
+      <div class="qa">
+        <h3>Q. 모바일에서도 되나요?</h3>
+        <p>A. 최신 모바일 브라우저에서 웹캠 또는 사진 업로드로 사용할 수 있습니다.</p>
+      </div>
+    </section>
+
+    <section id="privacy" class="content">
+      <h2>개인정보 및 모델 한계 안내</h2>
+      <p>본 서비스는 사용자 입력 이미지를 서버로 업로드하지 않으며, 브라우저에서만 처리됩니다.</p>
+      <ul class="bullets">
+        <li>모델은 강아지/고양이상 두 클래스만 분류합니다.</li>
+        <li>학습 데이터의 특성에 따라 특정 조건에서 오분류가 발생할 수 있습니다.</li>
+        <li>사용자 이미지로 추가 학습을 수행하지 않습니다.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
       <h2>제휴 문의</h2>
       <form action="https://formspree.io/f/xgolzrak" method="POST">
         <input type="text" name="company" placeholder="회사명" autocomplete="organization" required>

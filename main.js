@@ -2,6 +2,7 @@ const themeToggle = document.getElementById('theme-toggle');
 const startBtn = document.getElementById('start-btn');
 const stopBtn = document.getElementById('stop-btn');
 const webcamContainer = document.getElementById('webcam-container');
+const consentCheckbox = document.getElementById('consent-checkbox');
 const imageInput = document.getElementById('image-input');
 const imagePreview = document.getElementById('image-preview');
 const labelContainer = document.getElementById('label-container');
@@ -78,6 +79,10 @@ const loop = async () => {
 
 const startTest = async () => {
   if (isRunning) return;
+  if (!consentCheckbox.checked) {
+    setStatus('안내 확인 후 진행해주세요.');
+    return;
+  }
   setStatus('모델 로딩 중...');
   startBtn.disabled = true;
   try {
@@ -113,6 +118,10 @@ const stopTest = async () => {
 
 const predictImageFile = async (file) => {
   if (!file) return;
+  if (!consentCheckbox.checked) {
+    setStatus('안내 확인 후 진행해주세요.');
+    return;
+  }
   setStatus('모델 로딩 중...');
   if (!model) {
     await loadModel();

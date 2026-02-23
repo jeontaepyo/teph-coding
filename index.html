@@ -159,10 +159,26 @@
         <p class="hint">얼굴이 잘 보이는 사진을 선택하세요.</p>
       </div>
       <div class="result-card">
-        <h2>결과</h2>
-        <div id="result-main" class="result-main">준비됨</div>
+        <h2>테스트 결과</h2>
+        <div id="result-main" class="result-main">분석을 위해 사진을 업로드하거나 테스트 시작 버튼을 눌러주세요.</div>
         <div id="label-container" class="label-list"></div>
       </div>
+    </section>
+
+    <section id="deep-dive" class="content">
+      <h2>AI 동물상 분석의 기술적 배경과 가치</h2>
+      <article style="line-height: 1.8; color: var(--text); background: color-mix(in srgb, var(--card) 96%, #000); padding: 24px; border-radius: 16px; border: 1px solid color-mix(in srgb, var(--text) 5%, transparent);">
+        <p>본 동물상 테스트는 현대 인공지능의 핵심 기술인 <b>콘벌루션 신경망(CNN, Convolutional Neural Networks)</b>의 원리를 활용합니다. 수만 장의 인물 사진 데이터를 바탕으로 학습된 모델은 인간의 눈이 미처 파악하지 못하는 얼굴의 미세한 곡선, 눈매의 각도, 코의 너비 비율 등을 수치화하여 분석합니다.</p>
+        
+        <h3 style="margin-top: 20px;">동물상 분류의 인류학적 재미</h3>
+        <p>한국을 포함한 동아시아 문화권에서는 외모의 특징을 특정 동물에 빗대어 표현하는 독특한 문화가 있습니다. 이는 관상학적 전통과 현대적 미적 기준이 결합된 결과로, <b>'강아지상'</b>은 대개 선하고 친근한 인상을, <b>'고양이상'</b>은 세련되고 도도한 인상을 대표합니다. 최근에는 이러한 분류가 단순한 재미를 넘어, 자신의 분위기에 맞는 스타일링(메이크업, 헤어 등)을 찾는 데 유용한 참고 자료로 활용되기도 합니다.</p>
+        
+        <h3 style="margin-top: 20px;">왜 이 테스트는 안전한가요?</h3>
+        <p>많은 AI 서비스가 클라우드 서버로 데이터를 전송하여 개인정보 유출 우려가 있는 반면, 본 서비스는 <b>TensorFlow.js</b> 기술을 사용하여 사용자의 기기(로컬 브라우저) 내에서만 모든 연산이 이루어집니다. 이미지가 서버에 저장되지 않는다는 점은 구글 애드센스가 요구하는 높은 수준의 사용자 보안 및 품질 가이드라인을 준수하기 위한 저희의 핵심 설계 철학입니다.</p>
+        
+        <h3 style="margin-top: 20px;">콘텐츠의 지속적인 업데이트</h3>
+        <p>저희는 단순히 '강아지/고양이' 분류에 그치지 않고, 향후 학습 데이터를 보강하여 공룡상, 토끼상, 곰상 등 더 세분화된 동물상 분석 기능을 제공할 예정입니다. 각 업데이트는 데이터의 신뢰성과 사용자 경험을 최우선으로 고려하여 진행됩니다.</p>
+      </article>
     </section>
 
     <section id="tips" class="content">
@@ -238,6 +254,31 @@
         <button type="submit">문의 보내기</button>
       </form>
     </section>
+
+    <section id="articles" class="content">
+      <h2>더 알아보기: 동물상 이야기</h2>
+      <div class="qa">
+        <h3>강아지상과 고양이상의 차이점은 무엇인가요?</h3>
+        <p>일반적으로 강아지상은 눈매가 둥글고 처진 느낌을 주며, 웃을 때 입꼬리가 부드럽게 올라가는 특징이 있습니다. 반면 고양이상은 눈매가 위로 살짝 올라가 있고 도도하며 날카로운 인상을 주는 경우가 많습니다. 본 테스트는 딥러닝 기술을 활용해 이러한 미세한 특징들을 분석합니다.</p>
+      </div>
+      <div class="qa">
+        <h3>AI는 어떻게 얼굴을 인식하나요?</h3>
+        <p>본 서비스에서 사용되는 AI 모델은 수천 장의 '강아지상'과 '고양이상' 연예인 및 일반인 사진 데이터를 학습했습니다. 이미지 내에서 눈, 코, 입의 위치와 각도, 얼굴형 등의 데이터를 추출하여 확률값으로 결과를 도출합니다. 모든 연산은 웹 브라우저 내에서 TensorFlow.js 라이브러리를 통해 실시간으로 수행됩니다.</p>
+      </div>
+      <div class="qa">
+        <h3>동물상 테스트의 유래</h3>
+        <p>동물상 테스트는 한국의 독특한 관상 및 외모 분류 문화 중 하나로 자리 잡았습니다. '강아지상', '고양이상' 외에도 '공룡상', '토끼상', '여우상' 등 다양한 동물에 빗대어 외모를 설명하는 방식은 사람들에게 친근한 재미를 선사합니다.</p>
+      </div>
+    </section>
+
+    <footer style="margin-top: 48px; border-top: 1px solid color-mix(in srgb, var(--text) 10%, transparent); padding-top: 24px; color: var(--muted); font-size: 13px;">
+      <p>&copy; 2026 teph. All rights reserved.</p>
+      <nav style="display: flex; justify-content: center; gap: 16px; margin-top: 12px;">
+        <a href="privacy.html" style="color: var(--muted); text-decoration: none;">개인정보처리방침</a>
+        <a href="terms.html" style="color: var(--muted); text-decoration: none;">이용약관</a>
+        <a href="about.html" style="color: var(--muted); text-decoration: none;">소개</a>
+      </nav>
+    </footer>
 
     <section class="comments">
       <h2>댓글</h2>

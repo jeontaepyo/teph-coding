@@ -110,7 +110,7 @@ const stopTest = async () => {
   isRunning = false;
   stopBtn.disabled = true;
   startBtn.disabled = false;
-  setStatus('중지됨');
+  setStatus('분석이 종료되었습니다. 다시 시작하려면 테스트 시작 버튼을 눌러주세요.');
   if (webcam) {
     await webcam.stop();
   }
